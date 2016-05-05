@@ -7,13 +7,13 @@ import java.util.Scanner;
  */
 public class DemoEx1 {
   public static void main(String[] args) throws IntegersOnlyStringException {
-    Sumator su = new Sumator();
+    Arithmetic sumator = new Arithmetic();
     Scanner sc = new Scanner(System.in);
     String str1 = sc.nextLine();
     String str2 = sc.nextLine();
     String sum = "";
     try {
-      sum = su.Sum(str1, str2);
+      sum = sumator.Sum(str1, str2);
     } catch (NumberFormatException e) {
       throw new IntegersOnlyStringException();
     }
